@@ -35,4 +35,4 @@ export async function handlerNotesCreate(
   } catch (err) {
     respondWithError(res, 500, "Couldn't create note", err);
   }
-}
+

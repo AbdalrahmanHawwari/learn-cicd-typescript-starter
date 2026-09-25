@@ -18,5 +18,8 @@ jobs:
         with:
           node-version: 22
 
-      - name: Node version
-        run: node --version
+      - name: install dependincies
+        run: npm ci
+
+      - name: run tests
+        run: npm run test
