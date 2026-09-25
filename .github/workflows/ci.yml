@@ -18,13 +18,14 @@ jobs:
         with:
           node-version: 22
 
-      - name: install dependincies
+      - name: install dependencies
         run: npm ci
 
       - name: run tests
         run: npm run test
-    style:
-    name: style
+
+  style:
+    name: Style
     runs-on: ubuntu-latest
 
     steps:
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: install dependincies
+      - name: install dependencies
         run: npm ci
 
       - name: check formatting
